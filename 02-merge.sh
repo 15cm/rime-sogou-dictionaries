@@ -5,7 +5,7 @@ cat <<EOF > luna_pinyin.sogou.dict.yaml
 ---
 name: luna_pinyin.sogou
 version: "$(date)"
-sot: by_weight
+sort: by_weight
 use_preset_vocabulary: true
 ...
 
