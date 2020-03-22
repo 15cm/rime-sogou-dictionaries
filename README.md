@@ -7,3 +7,6 @@ Generates a "luna_pinyin" dictionary for Rime by filtering `scel` dictionaries f
 1. Runs `./bootstrap.sh` to initialize [imewlconverter](https://github.com/studyzy/imewlconverter).
 2. Runs `./make-dict.sh` for help and then follows the instructions.
 
+# Credits
+- [ThesaurusSpider](https://github.com/WuLC/ThesaurusSpider)
+- [imewlconverter](https://github.com/studyzy/imewlconverter)
