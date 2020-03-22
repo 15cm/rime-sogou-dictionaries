@@ -3,9 +3,10 @@ set -e
 
 if [ $# -ne 1 ]; then
   echo "Usage: $0 <regexp for sogou dictionaries>
+Please read the code of $0 for usage :)
 The script makes a sogou dictionary in rime format for luna_pinyin by:
-1. Crawl all sogou `scel` dictionaries.
-2. Filter them by `fd` with the regexp parameter.
+1. Crawl all sogou |scel| dictionaries.
+2. Filter them by |fd| with the regexp parameter.
 3. Merge them into a single text file."
   exit 1
 fi
@@ -17,7 +18,7 @@ deps=(
 )
 
 for dep in ${deps[@]}; do
-  if ! which $dep > /dev/null; then
+  if ! which > /dev/null 2>&1; then
     echo "Missing dependency: ${dep}"
     exit 1
   fi
