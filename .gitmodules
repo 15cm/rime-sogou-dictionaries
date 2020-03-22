@@ -1,0 +1,3 @@
+[submodule "ThesaurusSpider"]
+	path = ThesaurusSpider
+	url = https://github.com/15cm/ThesaurusSpider
