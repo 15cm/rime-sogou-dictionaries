@@ -1,1 +1,0 @@
-luna_pinyin.sogou.dict.yaml filter=lfs diff=lfs merge=lfs -text
