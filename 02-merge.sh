@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+fd '\.txt$' rime_dicts | parallel -j 1 'cat {} >> tmp-luna_pinyin.sogou.dict.yaml'
 cat <<EOF > luna_pinyin.sogou.dict.yaml
 ---
 name: luna_pinyin.sogou
@@ -10,4 +11,5 @@ use_preset_vocabulary: true
 ...
 
 EOF
-fd '\.txt$' rime_dicts | parallel -j 1 'cat {} >> luna_pinyin.sogou.dict.yaml'
+sort tmp-luna_pinyin.sogou.dict.yaml | uniq >> luna_pinyin.sogou.dict.yaml
+rm tmp-luna_pinyin.sogou.dict.yaml
