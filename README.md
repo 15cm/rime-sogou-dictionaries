@@ -7,7 +7,13 @@ Generates a "luna_pinyin" dictionary for Rime by filtering `scel` dictionaries f
 - fd
 - GNU parallel
 - python2
-- dotnet
+- [dotnet-core](https://dotnet.microsoft.com/download/dotnet-core)
+
+## macOS
+
+```shell
+brew install fd parallel
+```
 
 # Usage
 The scripts are tested under Linux and should work for Linux/Mac.
