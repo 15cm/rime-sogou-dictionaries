@@ -9,7 +9,7 @@ deps=(
 )
 
 for dep in ${deps[@]}; do
-  if ! which > /dev/null 2>&1; then
+  if ! which $dep > /dev/null 2>&1; then
     echo "Missing dependency: ${dep}"
     exit 1
   fi
